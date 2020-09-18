@@ -9,4 +9,4 @@ Conventional digital chess piece designs are not symmetrical, so if two people a
 
 [Two Player Chess for iPhone and iPad](https://apps.apple.com/app/two-player-chess-2p-chess/id1523171222)
 
-[Two Player Chess for Android(https://play.google.com/store/apps/details?id=com.twoplayerchess)
+[Two Player Chess for Android](https://play.google.com/store/apps/details?id=com.twoplayerchess)
