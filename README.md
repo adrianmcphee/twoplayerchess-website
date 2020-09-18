@@ -1,6 +1,6 @@
 # twoplayerchess-website
 
-twoplayerchess.com website
+[twoplayerchess.com](twoplayerchess.com) website
 
 Two Player Chess is a digital chess board app for tablet and mobile that works great for two people sitting opposite each other - like a traditional game of chess. One person can also play vs the in-built AI which has multiple personalities/strengths, and you can get tips from the AI for best moves in review mode after the game. 
       
