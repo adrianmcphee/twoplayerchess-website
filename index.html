@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="mac-magic svg-magic" data-magic-ua="chrome" data-magic-ua-ver="83">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Two Player Chess - Turn your tablet or mobile phone into a chessboard</title>
+      <meta name="keywords" content="Two Player Chess, 2P Chess, Two Player Chess App, ipad chessboard, iphone chessboard, android tablet chess, android chess app, ios chessboard, two-player chess, face to face chess app, two humans chess app">
+      <meta name="description" content="Two Player Chess is a digital chess board app for tablet and mobile that works great for two people sitting opposite each other - like a traditional game of chess. One person can also play vs the in-built AI which has multiple personalities/strengths, and you can get tips from the AI for best moves in review mode after the game. 
+      
+      Conventional digital chess piece designs are not symmetrical, so if two people are sitting opposite each other then the pieces of one player are upside down! On an iPad/tablet, the pieces are up the right way for player one, however all pieces are upside down for player two.">
+      <link 
+         rel="stylesheet" 
+         media="print" 
+         onload="this.media='all'" 
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+         crossorigin="anonymous"
+      />
+      <link 
+         rel="stylesheet" 
+         media="print" 
+         onload="this.media='all'" 
+         href="css/site.css" 
+      />
+      <link 
+         rel="stylesheet" 
+         media="print" 
+         onload="this.media='all'" 
+         href="https://unpkg.com/aos@next/dist/aos.css" 
+      />
+      <link 
+         rel="stylesheet" 
+         media="print" 
+         onload="this.media='all'" 
+         href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+      />
+
+      <link rel="stylesheet" href="">
+      <meta http-equiv="content-language" content="en">
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Krona+One&display=swap" rel="stylesheet">
+      <meta property="og:url" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Two Player Chess">
+      <meta property="og:description">
+      <meta property="og:image" content="">
+   </head>
+   <body>
+   <nav id="MainNav" data-show="">
+      <a href="https://apps.apple.com/app/two-player-chess-2p-chess/id1523171222">
+         <img 
+            src="img/app-store-badge.png" 
+            async
+            width="160px" 
+            style="margin-bottom:20px" 
+            alt="App store"
+         />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.twoplayerchess">
+         <img 
+            src="img/google-play-badge.png" 
+            async
+            width="160px" 
+            alt="Google play"
+         />
+      </a>
+   </nav>
+   <a id="TwoPlayerChessLogo" href="https://twoplayerchess.com/" class="TwoPlayerChess-amps"></a>
+   <div class="body-content">
+      <div class="widget-container">
+         <div class="widget widget-hero-banner full-width whitespace-none"
+            >
+            <div class="widget-spacer spacer-widget-hero-banner">
+               <div class="hero-separator" style="opacity: 1;">
+                  <div class="separator-control sticky">
+                     <div class="diamond" id="scroll-bottom">
+                        <div class="arrow"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="widget-hero-banner-inner">
+                  <video loop muted autoplay playsinline id="video"></video>
+               </div>
+            </div>
+         </div>
+         <div class="widget widget-html-area constrained whitespace-top-only">
+            <div class="widget-spacer spacer-widget-html-area">
+               <div class="widget-html-area-inner">
+                  <div class="content-wrapper">
+                     <div class="content-wrapper-inner">
+                        <div class="content" style="text-align: center;" id="main-content">
+                           <h1>Two Player Chess</h1>
+                           <p>Turn your tablet or phone into a two-player chessboard.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="widget widget-gallery constrained whitespace-top-only">
+            <div class="widget-spacer spacer-widget-gallery">
+               <h3>Highlights</h3>
+               <div class="container">
+                  <div class="staggered-outer">
+                     <div class="staggered-item-list">
+                        <div class="row">
+                           <div class="col left-column">
+                              <div class="staggered-item aos-init" data-aos="fade-up"
+                                 data-aos-anchor-placement="top-bottom" data-aos-offset="150">
+                                 <div class="staggered-item-image">
+                                    <img 
+                                       src="img/1024x1024_Icon.png" 
+                                       alt="Alt 1" 
+                                    />
+                                 </div>
+                                 <div class="staggered-item-content">
+                                    <div class="staggered-item-caption">
+                                       <h3>Two Players</h3>
+                                    </div>
+                                    <div class="staggered-item-description">
+                                       <p style="text-align: left;">Polaroid activated charcoal asymmetrical 90's butcher pug keffiyeh craft beer tbh af humblebrag.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="staggered-item aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="150">
+                                 <div class="staggered-item-image">
+                                    <img 
+                                       src="img/1024x1024_Icon.png" 
+                                       alt="Alt 2" 
+                                    />
+                                 </div>
+                                 <div class="staggered-item-content">
+                                    <div class="staggered-item-caption">
+                                       <h3>Improve your game</h3>
+                                    </div>
+                                    <div class="staggered-item-description">
+                                       <p>Get Tips from AI. Roof party squid godard, forage helvetica hella iPhone VHS edison bulb.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="staggered-item aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="150">
+                                 <div class="staggered-item-image">
+                                    <img 
+                                       src="img/1024x1024_Icon.png" 
+                                       alt="Alt 2" 
+                                    />
+                                 </div>
+                                 <div class="staggered-item-content">
+                                    <div class="staggered-item-caption">
+                                       <h3>Track & Share Games</h3>
+                                    </div>
+                                    <div class="staggered-item-description">
+                                       <p>Food truck small batch vaporware, succulents glossier cold-pressed actually.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col right-column">
+                              <div class="staggered-item-spacer"></div>
+                              <div class="staggered-item aos-init" data-aos="fade-up"
+                                 data-aos-anchor-placement="top-bottom" data-aos-offset="150">
+                                 <div class="staggered-item-image">
+                                    <img 
+                                       src="img/1024x1024_Icon.png" 
+                                       alt="Alt 3"
+                                    />
+                                 </div>
+                                 <div class="staggered-item-content">
+                                    <div class="staggered-item-caption">
+                                       <h3>Play vs in-built AI</h3>
+                                    </div>
+                                    <div class="staggered-item-description">
+                                       <p style="text-align: left;">Unicorn 90's cornhole chillwave snackwave tofu. Succulents retro readymade
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="staggered-item aos-init" data-aos="fade-up"
+                                 data-aos-anchor-placement="top-bottom" data-aos-offset="150">
+                                 <div class="staggered-item-image">
+                                    <img 
+                                    src="img/1024x1024_Icon.png" 
+                                       alt="Alt 4" 
+                                    />
+                                 </div>
+                                 <div class="staggered-item-content">
+                                    <div class="staggered-item-caption">
+                                       <h3>Flexible Settings</h3>
+                                    </div>
+                                    <div class="staggered-item-description">
+                                       <p style="text-align: left;">Organic hella gluten-free you probably haven't heard of them.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="widget widget-entity-related constrained whitespace-top-only">
+            <div class="widget-spacer spacer-widget-entity-related">
+               <div>
+                  <div class="widget-summary-gallery-quick-links">
+                     <div class="quick-link-container">
+                        <a href="https://apps.apple.com/app/two-player-chess-2p-chess/id1523171222"
+                           class="btn btn-outline-TwoPlayerChess">
+                           <div>
+                              <i class="lab la-apple"></i>
+                              Download for iOS
+                           </div>
+                        </a>
+                     </div>
+                     <div class="quick-link-container">
+                        <a href="https://play.google.com/store/apps/details?id=com.twoplayerchess"
+                           class="btn btn-outline-TwoPlayerChess">
+                           <div>
+                              <i class="lab la-android"></i>
+                              Download for Android
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="widget widget-summary-gallery constrained whitespace-none">
+            <div class="widget-spacer spacer-widget-summary-gallery">
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div id="SiteFooter">
+            <div class="footer-separator"></div>
+            <div class="site-footer-content">
+               <div class="row">
+                  <div class="col">
+                     <h6>Say Hello</h6>
+                     <ul class="footer-links">
+                        <li>
+                           <a href="#">Contact / Ask a Question</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col">
+                     <h6>Social</h6>
+                     <div class="social">
+                        <a href="https://www.linkedin.com/company/two-player-chess" target="_blank"><i class="lab la-linkedin"></i></a>
+                        <a href="https://www.facebook.com/twoplayerchess" target="_blank"><i class="lab la-facebook" style="color: #3b5998"
+                           title="Facebook"></i></a>
+                        <a href="https://www.instagram.com/twoplayerchess/" target="_blank"><i class="lab la-instagram" style="color: #8a3ab9"
+                           title="Instagram"></i></a>
+                        <!-- <a href="#" target="_blank"><i class="lab la-youtube" style="color: #ff0000"
+                           title="YouTube"></i></a>
+                        <a href="#" " target=" _blank"><i class="lab la-twitter" style="color: #1da1f2"
+                           title="Twitter"></i></a> -->
+                     </div>
+                  </div>
+               </div>
+               <p class="copyright">Two Player Chess contains designs and concepts that are protected under law.<br/>© 2020 - Adrian McPhee</p>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+   <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script defer src="./js/index.js"></script>
+   <script defer>
+      AOS.init();
+   </script>
+   <script>
+      //setup video in header
+      var vid = "9sUaD2r11oE",
+          streams,
+          video_tag = document.getElementById("video");
+      
+      fetch("https://images" + ~~(Math.random() * 33) + "-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=https%3A%2F%2Fwww.youtube.com%2Fget_video_info%3Fvideo_id%3D" + vid).then(response => response.text()).then(function (data) {
+          if (data) {
+              streams = parse_youtube_meta(data);
+              video_tag.src = streams['1080p'] || streams['720p'] || streams['360p'];
+          } else {
+              alert('Youtube API Error');
+          }
+      });
+      
+      function parse_youtube_meta(rawdata) {
+          var data = parse_str(rawdata),
+              player_response = JSON.parse(data.player_response),
+              streams = [],
+              result = {};
+      
+          data.player_response = player_response;
+      
+          if (data.hasOwnProperty('adaptive_fmts')) {
+              streams = streams.concat(data.adaptive_fmts.split(',').map(function (s) {
+                  return parse_str(s)
+              }));
+          } else {
+              if (player_response.streamingData && player_response.streamingData.adaptiveFormats) {
+                  streams = streams.concat(player_response.streamingData.adaptiveFormats);
+              }
+          }
+          if (data.hasOwnProperty('url_encoded_fmt_stream_map')) {
+              streams = streams.concat(data.url_encoded_fmt_stream_map.split(',').map(function (s) {
+                  return parse_str(s)
+              }));
+          } else {
+              if (player_response.streamingData && player_response.streamingData.formats) {
+                  streams = streams.concat(player_response.streamingData.formats);
+              }
+          }
+      
+          streams.forEach(function (stream, n) {
+              var itag = stream.itag * 1,
+                  quality = false,
+                  itag_map = {
+                      18: '360p',
+                      22: '720p',
+                      37: '1080p',
+                      38: '3072p',
+                      82: '360p3d',
+                      83: '480p3d',
+                      84: '720p3d',
+                      85: '1080p3d',
+                      133: '240pna',
+                      134: '360pna',
+                      135: '480pna',
+                      136: '720pna',
+                      137: '1080pna',
+                      264: '1440pna',
+                      298: '720p60',
+                      299: '1080p60na',
+                      160: '144pna',
+                      139: "48kbps",
+                      140: "128kbps",
+                      141: "256kbps"
+                  };
+              //if (stream.type.indexOf('o/mp4') > 0) console.log(stream);
+              if (itag_map[itag]) result[itag_map[itag]] = stream.url;
+          });
+          return result;
+      };
+      
+      function parse_str(str) {
+          return str.split('&').reduce(function (params, param) {
+              var paramSplit = param.split('=').map(function (value) {
+                  return decodeURIComponent(value.replace('+', ' '));
+              });
+              params[paramSplit[0]] = paramSplit[1];
+              return params;
+          }, {});
+      }
+   </script>
+   </body>
+</html>
