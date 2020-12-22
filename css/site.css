@@ -154,6 +154,7 @@ h6 {
 #MainNav table    { 
     color:#FFF;
     background: rgba(50, 50, 50, 0.8);
+    width: 350px;
 }
 
 th {font-weight: 400; font-size:18px; padding-top: 10px}
@@ -173,6 +174,10 @@ td a:hover {color: #fff}
 .apple a {color: #007bff }
 
 #MainNav {
+    margin-top: 50px;
+}
+
+/* #MainNav {
     position: fixed;
     right: 100px;
     top: 150px;
@@ -181,7 +186,7 @@ td a:hover {color: #fff}
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     width: 300px;
-}
+} */
 
 #MainNav ul {
     text-align: right;
