@@ -126,7 +126,13 @@
                   </div>
                </div>
                <div class="widget-hero-banner-inner">
-                  <video loop muted autoplay playsinline id="video"></video>
+                  <span class="head_overlay"></span>
+                  <video loop muted autoplay playsinline>
+                     <source src="./videos/header_video.mp4" type="video/mp4">
+                     <source src="./videos/header_video.ogg" type="video/ogg">
+                     <source src="./videos/header_video.webm" type="video/ogg">
+                     Your browser does not support HTML video.
+                  </video>
                </div>
             </div>
          </div>
@@ -422,19 +428,20 @@
       AOS.init();
    </script>
    <script>
-      //setup video in header
-      var vid = "Ehq8WCl3RsY",
-          streams,
-          video_tag = document.getElementById("video");
       
-      fetch("https://images" + ~~(Math.random() * 33) + "-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=https%3A%2F%2Fwww.youtube.com%2Fget_video_info%3Fvideo_id%3D" + vid).then(response => response.text()).then(function (data) {
-          if (data) {
-              streams = parse_youtube_meta(data);
-              video_tag.src = streams['1080p'] || streams['720p'] || streams['360p'];
-          } else {
-              alert('Youtube API Error');
-          }
-      });
+      //setup video in header
+      // var vid = "Ehq8WCl3RsY",
+      //     streams,
+      //     video_tag = document.getElementById("video");
+      
+      // fetch("https://images" + ~~(Math.random() * 33) + "-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=https%3A%2F%2Fwww.youtube.com%2Fget_video_info%3Fvideo_id%3D" + vid).then(response => response.text()).then(function (data) {
+      //     if (data) {
+      //         streams = parse_youtube_meta(data);
+      //         video_tag.src = streams['1080p'] || streams['720p'] || streams['360p'];
+      //     } else {
+      //         alert('Youtube API Error');
+      //     }
+      // });
       
       function parse_youtube_meta(rawdata) {
           var data = parse_str(rawdata),

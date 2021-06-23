@@ -765,3 +765,19 @@ td a:hover {color: #fff}
     height: 100%;
     object-fit: cover;
 }
+
+.widget-hero-banner-inner{
+    position: relative;
+}
+.widget-hero-banner-inner video{
+    z-index: 0;
+}
+.head_overlay{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1;
+}
