@@ -58,17 +58,6 @@ label.btn-outline-TwoPlayerChess {
     text-transform: uppercase;
 }
 
-a.btn-outline-TwoPlayerChess-free{
-    padding: .3rem 1rem;
-    border-color: #6c757d;
-    color: #6c757d;
-    background-color: #fff;
-    border-radius: 0;
-    text-transform: uppercase;
-}
-
-
-
 h1,
 h2,
 h4,
@@ -718,6 +707,30 @@ td a:hover {color: #fff}
     margin-right: 15px;
 }
 
+.store-badge-links {
+    gap: 15px;
+}
+
+.store-badge-links .quick-link-container:first-child {
+    margin-right: 0;
+}
+
+.store-badge-link {
+    display: inline-block;
+    line-height: 0;
+}
+
+.store-badge-link img {
+    height: 53px;
+    width: auto;
+}
+
+.store-badge-link.is-disabled {
+    cursor: default;
+    opacity: .42;
+    pointer-events: none;
+}
+
 @media(max-width: 767px) {
     .widget-summary-gallery-quick-links {
         display: block;
@@ -731,6 +744,10 @@ td a:hover {color: #fff}
 
     .quick-link-container a {
         width: 100%;
+    }
+
+    .quick-link-container .store-badge-link {
+        width: auto;
     }
 
     .staggered-item-list .row {
